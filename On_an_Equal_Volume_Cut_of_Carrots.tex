@@ -1,0 +1,179 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{sectsty} 					% for changing the section title font size
+
+%\usepackage{xcolor}						% to change background to black
+%\usepackage{fancyhdr}% http://ctan.org/pkg/fancyhdr
+%\makeatletter
+%\fancypagestyle{mypagestyle}{%
+%  \fancyhf{}% Clear header/footer
+%  \fancyfoot[C]{\textcolor{black!30}{\thepage}}% Page # in middle/centre of footer
+%  \renewcommand{\headrulewidth}{.4pt}% .4pt header rule
+  %\def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi
+    %\color{red}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+%  \renewcommand{\footrulewidth}{0pt}% No footer rule
+%  \def\footrule{{\if@fancyplain\let\footrulewidth\plainfootrulewidth\fi
+%    \vskip-\footruleskip\vskip-\footrulewidth
+%    \hrule\@width\headwidth\@height\footrulewidth\vskip\footruleskip}}
+%}
+%\makeatother
+%\pagestyle{mypagestyle}
+
+\sectionfont{\fontsize{16}{15}\selectfont} 		% set section title font size to x: \fontsize{x}{15} 
+\subsectionfont{\fontsize{14}{15}\selectfont}
+\subsubsectionfont{\fontsize{13}{15}\selectfont}
+\usepackage[margin=1in]{geometry}			% for 1inch margins
+\usepackage{graphicx}					% for including graphics
+\graphicspath{{}}						% defining path to where image files are kept
+\usepackage{amsmath}					% for align and align* environments
+\usepackage{amssymb}					% for aligning piecewise functions
+
+\usepackage{color}
+\usepackage{courier}
+\usepackage{listings}
+\lstset{ %
+language=C++,                				% choose the language of the code
+basicstyle=\footnotesize\ttfamily,       		% the size and type of the fonts that are used for the code
+%numbers=left,                   				% where to put the line-numbers
+numberstyle=\footnotesize,      			% the size of the fonts that are used for the line-numbers
+stepnumber=1,                   			% the step between two line-numbers. If it is 1 each line will be numbered
+numbersep=5pt,                  			% how far the line-numbers are from the code
+backgroundcolor=\color{black},  		% choose the background color. You must add \usepackage{color}
+showspaces=false,               			% show spaces adding particular underscores
+showstringspaces=false,         			% underline spaces within strings
+showtabs=false,                 			% show tabs within strings adding particular underscores
+%frame=single,           					% adds a frame around the code
+tabsize=2,          					% sets default tabsize to 2 spaces
+captionpos=b,           					% sets the caption-position to bottom
+breaklines=true,        				% sets automatic line breaking
+breakatwhitespace=false,    			% sets if automatic breaks should only happen at whitespace
+escapeinside={\%*}{*)}          			% if you want to add a comment within your code
+}
+
+\newcommand{\V}{\vec}
+\newcommand{\B}{\boldsymbol}
+\usepackage[ampersand]{easylist}
+\usepackage{mathrsfs}				% for script letters in math mode: $\mathscr{F}$ or $\mathcal{F}$
+
+\def\rcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{ScriptR}}$}}}		% for the script r
+\def\brcurs{{\mbox{$\resizebox{.16in}{.08in}{\includegraphics{BoldR}}$}}}		% for the script r
+\def\hrcurs{{\mbox{$\hat \brcurs$}}}									% for the script r
+
+\newcommand{\A}{\forall}
+\newcommand{\E}{\exists}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Mod}{$ mod $}
+\newcommand{\ndiv}{\hspace{-4pt}\not|\hspace{2pt}} 		% has problems if the font size is changed
+
+\newcommand*{\selectcourier}{\fontfamily{pcr}\selectfont}		% this goes with next line
+\DeclareTextFontCommand{\code}{\selectcourier}			% for typing code in line with normal text: \code{text like code}
+
+\begin{document}
+%\color{black!30}			% text color
+%\pagecolor{black!100}
+
+\title{On the Equal Volume Cut of Conical Carrots}
+\author{Mikhail Schee}
+\date{}
+\maketitle
+
+
+\subsection*{Abstract}
+\indent In order to split an idealized conical carrot into two pieces of equal volume, a cut should be made parallel to the base and approximately one fifth of the carrots total length measured up from the bottom. This simple rule of thumb warrants real world testing.
+
+\subsection*{Motivation}
+\indent It is of interest to cut a carrot into two pieces of equal volume. A trivial solution is to make a cut lengthwise from the tip to the base. However, this is often inconvenient because the carrot may be curved, longer than the knife's blade, or both. Therefore, the cut shall be made across the shorter dimension. 
+
+Fully grown carrots generally taper significantly from one end to the other [citation needed]. In order to get a rough estimate for the position of the equal volume cut, an idealized model shall be adopted where the carrot is represented as a cone. It should be noted that by invoking Cavalieri's Principle, the following derivation can reasonably be applied to mildly curved carrots [1]. % https://en.wikipedia.org/wiki/Cavalieri%27s_principle
+
+\subsection*{Derivation}
+
+\indent Consider an idealized conical carrot of length $L$ and a circular base of radius $r$ (Figure \ref{fig:carrot}). The volume of this carrot is
+	\begin{align}\label{V}
+		V = \frac{1}{3}\pi r^2 L.
+	\end{align}
+
+%	\begin{figure}[h!]
+%		\centering
+%		\includegraphics[width=0.5\linewidth]{CCFig1.JPG}
+%		\caption{\textit{An idealized conical carrot. Original figure.}}
+%		\label{fig:carrot}
+%	\end{figure}
+
+A fraction $k$ will define where the cut should be made. The length of the base piece will be $kL$ and the length of the tip piece will be $L-kL$. The circle formed by the cut is defined to have a radius $r_k$ (Figure \ref{fig:cutcarrot}). 
+
+%	\begin{figure}[h!]
+%		\centering
+%		\includegraphics[width=0.5\linewidth]{CCFig2.JPG}
+%		\caption{\textit{The conical carrot with a cut a distance $kL$ from the base. Original figure.}}
+%		\label{fig:cutcarrot}
+%	\end{figure}
+
+Since the cut is defined so the volumes of the base piece and the tip piece are equal, it is only necessary to find one of those volumes for this derivation. The tip piece is a cone and its volume is given by 
+
+	\begin{align}\label{tipVol}
+		V_1 = \frac{1}{3}\pi r_k^2 (L-kL).
+	\end{align}
+
+In order to find $r_k$ in terms of $r$ and $k$, consider the two right triangles shown in Figure \ref{fig:triangles}. The triangles were formed by drawing a line from the center of the base to the tip of the carrot. Because they share the angle $\theta$, the trigonometric relation
+	\begin{align}\label{bigT}
+		\text{tan}(\theta) = \frac{r}{L}
+	\end{align}
+
+can be defined for the big triangle and the similar relation
+	\begin{align}\label{lilT}
+		\text{tan}(\theta) = \frac{r_k}{L-kL}
+	\end{align}
+
+can be defined for the smaller triangle. 
+
+%	\begin{figure}[h!]
+%		\centering
+%		\includegraphics[width=0.5\linewidth]{CCFig3.JPG}
+%		\caption{\textit{Two right triangles formed by the full carrot and the tip piece. Original figure.}}
+%		\label{fig:triangles}
+%	\end{figure}
+
+Setting equations \eqref{bigT} and \eqref{lilT} equal to each other allows for $r_k$ to be found in terms of $r$ and $k$:
+	\begin{align*}
+		\frac{r_k}{L-kL} &= \frac{r}{L}
+	\end{align*}
+	\begin{align*}
+		r_k &= \frac{r}{L}(L-kL)\nonumber \\
+		r_k &= r(1-k).
+	\end{align*}
+
+This may be substituted into equation (\ref{tipVol}) to redefine the tip piece's volume:
+	\begin{align}
+		V_1 &= \frac{1}{3}\pi [r(1-k)]^2 (L-kL)\nonumber\\
+		V_1 &= \frac{1}{3}\pi r^2 (1-k)^2 L(1-k)\nonumber\\
+		V_1 &= \frac{1}{3}\pi r^2 (1-k)^3 L \label{tipVol2}
+	\end{align}
+
+Because the tip and base pieces are of equal volume, the total volume $V$ will be equal to twice the tip piece's volume.
+	\begin{align*}
+		V = 2\cdot V_1
+	\end{align*}
+
+Substituting equations (\ref{V}) and (\ref{tipVol2}) into the above expression gives
+	\begin{align*}
+		 \frac{1}{3}\pi r^2 L &= 2\cdot \frac{1}{3}\pi r^2(1-k)^3 L.
+	\end{align*}
+
+Canceling common factors from both sides leaves a relatively simple expression for $k$.
+	\begin{align}
+		1 &= 2(1-k)^3\nonumber\\
+		\left(\frac{1}{2}\right)^{1/3} &= 1-k\nonumber\\
+		k &= 1 - \left(\frac{1}{2}\right)^{1/3}
+	\end{align}
+
+Evaluated numerically, $k = 0.2063$ which is reasonably close to a fifth.
+
+	\begin{equation}
+		\boxed{k \approx \frac{1}{5}}
+	\end{equation}
+	
+The equal volume cut of a conical carrot is approximately one fifth of the carrot's total length from the base. This simple rule warrants testing, most likely using the water displacement method to measure the volume of real, irregularly shaped carrots.
+
+
+	
+\end{document}
