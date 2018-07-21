@@ -3,15 +3,15 @@
 
 ## Introduction
 
-<div style="text-align: justify">
-Water flows downhill. General Ulysses S. Grant knew this when he attempted to divert the Mississippi River to bypass hostile forces during the American Civil War [1][2]. While the project eventually failed due to technical problems, the idea behind Grant's plan was sound. Water always follows the path of least resistance. If a new path of even less resistance is introduced, the water will naturally divert in that direction. This principle largely applies to people as well. Humans tend to use the means that requires the least effort to get to a desired ends*.  Thus, as new systems and environments are set up, the creators must face a question of ethics about determining what will be the path of least resistance and consequently, the default behavior. 
+<div markdown=1 style="text-align: justify">
+Water flows downhill. General Ulysses S. Grant knew this when he attempted to divert the Mississippi River to bypass hostile forces during the American Civil War [[1]](#ref1) [2]. While the project eventually failed due to technical problems, the idea behind Grant's plan was sound. Water always follows the path of least resistance. If a new path of even less resistance is introduced, the water will naturally divert in that direction. This principle largely applies to people as well. Humans tend to use the means that requires the least effort to get to a desired ends. Thus, as new systems and environments are set up, the creators must face a question of ethics about determining what will be the path of least resistance and consequently, the default behavior. 
 </div>
 
 [//]: # ([footnote] That's not to say all actions are predetermined, but there is an inertia of change that must be overcome to choose other than the default. Everyone experiences times where the drive and will to do so are readily available, but those moments represent the exception to this general trend.)
 
 ## Toggles and Switches
 
-<div style="text-align: justify">
+<div markdown=1 style="text-align: justify">
 For the purposes of this paper, a default setting is the most likely outcome of a situation as dictated by the context and environment. This applies to many areas of life, but is perhaps the most straightforward in consumer technology. 
 <br><br>
 
@@ -29,7 +29,7 @@ An illustrative hypothetical: You are in the process of signing up for a service
 
 ## Market Forces and Couch Placement
 
-<div style="text-align: justify">
+<div markdown=1 style="text-align: justify">
 Looking beyond technology, the defaults become more subtle and difficult to identify. There also exists an element of deniability as the defaults aren't necessarily the result of an active decision on the part of the creator. Whether it is a store manager deciding what brands to stock or a homeowner deciding how to arrange furniture, the defaults created could be the result of anything from a series of coin flips to intentional and calculated design. 
 <br><br>
 
@@ -44,7 +44,7 @@ Another illustrative hypothetical: A brand new homeowner is in the process of mo
 
 ## Taking it Personally
 
-<div style="text-align: justify">
+<div markdown=1 style="text-align: justify">
 Perhaps the most familiar, yet often the most neglected, area of defaults are habits of personal behavior. These are the actions we take in situations encountered often, maybe even several times a day. It is understandable why these behaviors are often neglected. Habits are notoriously hard to break. 
 <br><br>
 
@@ -54,7 +54,7 @@ Allowing for a loose metaphor, the human brain is like a large field of tall gra
 
 [//]: # ([Largely as the result of work by Kandel and his colleagues at Columbia University, it has become possible to study at the cellular level some relatively simple forms of behavioral memory like habituation and sensitization (Kendel, 1976). *Habituation refers to progressive diminution in the intensity of a response as the result of repeated presentations of a stimulus.* Sensitization refers to the enhancement of the response to a stimulus as the result of strong stimulation with another stimulus. These forms of memory are nonassociative, in that they do not depend on pairing of stimuli or on forming associations between stimuli. Because both phenomena are nevertheless instances of how *behavior can be changed by previous experience*, they provide useful ways to study phylogenetically simple forms of memory] Chapter 7. Memory and the Brain, p. 173, Sarah L. Friedman, Kenneth A. Klivington, Rita W. Peterson, "The Brain, Cognition, and Education." Academic Press, Sep 25, 2013)
 
-<div style="text-align: justify">
+<div markdown=1 style="text-align: justify">
 Because the environment in which a person spends the majority of their time determines the majority of their personal default behaviors, every individual faces an ethical dilemma when deciding how to arrange and populate their personal space. Making changes to that environment can be much more effective to change habits than the force of will alone. 
 <br><br>
 
@@ -63,12 +63,13 @@ Say you had the habit of eating a bowl of ice cream every night and wanted to ch
 
 ## Conclusion
 
-<div style="text-align: justify">
+<div markdown=1 style="text-align: justify">
 The default option for any situation is far more likely to occur than anything else. What the default option turns out to be is determined by the context and environment in which the decision is made. Whether it's the system preferences on a smartphone, the brands of orange juice stocked at a supermarket, or your choice of a bedtime snack, the most likely outcome of a situation is determined by those that created the environment. Therefore, those creators have an ethical responsibility to decide on an appropriate default action.
 </div>
 
 ## References
 
+<a name="ref1"></a>
 [1] http://ladelta65.org/places/Grants.Canal.htm
 
 [2] https://www.nps.gov/vick/learn/historyculture/grants-canal.htm
