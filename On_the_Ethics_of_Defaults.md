@@ -1,5 +1,6 @@
 
 # On the Ethics of Defaults
+by Mikhail Schee
 
 ## Introduction
 
